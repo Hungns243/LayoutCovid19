@@ -96,6 +96,7 @@ class RegisterViewController: UIViewController {
         button.layer.cornerRadius = 8
         button.layer.masksToBounds = true
         
+        
         return button
     }()
     // NSMutablePar
@@ -103,9 +104,9 @@ class RegisterViewController: UIViewController {
         let RegistingLabel = UILabel()
         
         
-//        RegistingLabel.text = "By registering, you automatically accept the Terms & Policies of COVID - 19 app."
+
         RegistingLabel.numberOfLines = 0
-//        RegistingLabel.backgroundColor = UIColor(red: 0.53, green: 0.81, blue: 0.65, alpha: 1.00)
+
         RegistingLabel.font = UIFont.systemFont(ofSize: 12)
         RegistingLabel.textAlignment = .center
         

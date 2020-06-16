@@ -21,6 +21,10 @@ extension UIColor {
     return UIColor(red: 0.24, green: 0.69, blue: 0.43, alpha: 1.00)
     }
     
+    class func fontLabel() -> UIColor {
+        return UIColor(red: 0.25, green: 0.38, blue: 0.45, alpha: 1.00)
+    }
+    
     
     
 }
