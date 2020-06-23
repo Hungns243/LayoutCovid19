@@ -141,6 +141,24 @@ extension HomepageViewController: UITableViewDelegate, UITableViewDataSource {
         cell.label.text = datas[indexPath.row].title
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let isSelect = indexPath.row
+        switch isSelect {
+        case 0:
+            let vc = TestRequestViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+//        case 1:
+//            let vc = CovidView2ViewController()
+//            vc.modalPresentationStyle = .fullScreen
+//            self.present(vc, animated: true, completion: nil)
+            
+        
+        default:
+            return 
+        }
+        
+        
+    }
     
 }

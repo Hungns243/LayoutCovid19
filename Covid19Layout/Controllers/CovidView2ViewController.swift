@@ -1,16 +1,14 @@
 //
-//  TestRequestViewController.swift
+//  CovidView2ViewController.swift
 //  Covid19Layout
 //
-//  Created by User on 6/12/20.
+//  Created by User on 6/16/20.
 //  Copyright © 2020 hung. All rights reserved.
 //
 
 import UIKit
 
-class TestRequestViewController: UIViewController {
-    
-    let datas1 = createData1()
+class CovidView2ViewController: UIViewController {
     
     let menuImage: UIImageView = {
         let image = UIImageView()
@@ -35,17 +33,35 @@ class TestRequestViewController: UIViewController {
     
     let label: UILabel = {
         let label1 = UILabel()
-        label1.text = "Who are you requesting a test for?"
+        label1.text = "Where are you curently located?"
         return label1
     }()
     
-    // khởi tạo collectionView:
-    let collectionView1: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+    let textField: UITextField = {
+        let textfield = UITextField()
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
+        textfield.leftView = view
+//        view.backgroundColor = .green
+        textfield.leftViewMode = UITextField.ViewMode.always
         
-        return collectionView
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
+//        button.backgroundColor = .red
+        textfield.rightView = button
+        textfield.rightViewMode = UITextField.ViewMode.always
+        button.setImage(UIImage(named: "iconplus"), for: .normal)
+        
+        
+        
+        textfield.backgroundColor = .white
+        textfield.layer.cornerRadius = 4
+        textfield.layer.masksToBounds = true
+        textfield.placeholder = "Search location"
+        
+        
+        return textfield
     }()
+    
+    
     
     let buttonCheck: UIButton = {
         let button = UIButton()
@@ -62,28 +78,24 @@ class TestRequestViewController: UIViewController {
         return button
     }()
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        collectionView1.delegate = self
-        collectionView1.dataSource = self
-        
-        collectionView1.register(CustomsCollectionViewCell.self, forCellWithReuseIdentifier: "CustomsCollectionViewCell")
-        
-        view.backgroundColor = UIColor.backgroundColor()
-        
-        setupLayout()
-    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         buttonCheck.layer.cornerRadius = buttonCheck.bounds.width/2
         buttonCheck.layer.masksToBounds = true
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupLayout()
+        
+        view.backgroundColor = UIColor.backgroundColor()
+
+        
+    }
     
-    func setupLayout() {
+    func setupLayout(){
         view.addSubview(avatarImage)
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
         
@@ -108,7 +120,6 @@ class TestRequestViewController: UIViewController {
         viewCovid.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
         viewCovid.topAnchor.constraint(equalTo: avatarImage.bottomAnchor, constant: 24).isActive = true
         viewCovid.heightAnchor.constraint(equalToConstant: view.frame.size.height/6).isActive = true
-//        viewCovid.backgroundColor = UIColor.blue
         
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -119,14 +130,16 @@ class TestRequestViewController: UIViewController {
         label.heightAnchor.constraint(equalToConstant: 30).isActive = true
         label.backgroundColor = UIColor.backgroundColor()
         
-        view.addSubview(collectionView1)
-        collectionView1.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(textField)
+        textField.translatesAutoresizingMaskIntoConstraints = false
         
-        collectionView1.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24).isActive = true
-        collectionView1.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3).isActive = true
-        collectionView1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
-        collectionView1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
-        collectionView1.backgroundColor = UIColor.backgroundColor()
+        textField.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24).isActive = true
+        textField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        textField.leadingAnchor.constraint(equalTo: viewCovid.leadingAnchor).isActive = true
+        textField.trailingAnchor.constraint(equalTo: viewCovid.trailingAnchor).isActive = true
+        
+       
+        
         
         view.addSubview(buttonCheck)
         buttonCheck.translatesAutoresizingMaskIntoConstraints = false
@@ -139,47 +152,13 @@ class TestRequestViewController: UIViewController {
         
     }
     
-    
-    
-}
-
-
-extension TestRequestViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  datas1.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView1.dequeueReusableCell(withReuseIdentifier: "CustomsCollectionViewCell", for: indexPath) as! CustomsCollectionViewCell
-        cell.image.image = UIImage(named: datas1[indexPath.row].imageIcon)
-        cell.label.text = datas1[indexPath.row].nameLabel
-        
-        
-        return cell
-    }
     @objc func onButton(){
-        let vc = CovidView2ViewController()
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+        let screen = Covid3ViewController()
+        screen.modalPresentationStyle = .fullScreen
+        self.present(screen, animated: true, completion: nil)
     }
     
+
     
+
 }
-
-
-extension TestRequestViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width/2 - 10
-        let height = collectionView.bounds.height/2 - 10
-        return CGSize(width: width, height: height)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
-    }
-}
-

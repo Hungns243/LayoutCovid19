@@ -1,16 +1,16 @@
 //
-//  TestRequestViewController.swift
+//  Covid4CollectionViewController.swift
 //  Covid19Layout
 //
-//  Created by User on 6/12/20.
+//  Created by User on 6/17/20.
 //  Copyright © 2020 hung. All rights reserved.
 //
 
 import UIKit
 
-class TestRequestViewController: UIViewController {
+class Covid4CollectionViewController: UIViewController {
     
-    let datas1 = createData1()
+    let datas4 = createData4()
     
     let menuImage: UIImageView = {
         let image = UIImageView()
@@ -35,16 +35,8 @@ class TestRequestViewController: UIViewController {
     
     let label: UILabel = {
         let label1 = UILabel()
-        label1.text = "Who are you requesting a test for?"
+        label1.text = "What is your gender?"
         return label1
-    }()
-    
-    // khởi tạo collectionView:
-    let collectionView1: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        
-        return collectionView
     }()
     
     let buttonCheck: UIButton = {
@@ -62,28 +54,32 @@ class TestRequestViewController: UIViewController {
         return button
     }()
     
+    let collectionview: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        
+        return collection
+    }()
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        collectionView1.delegate = self
-        collectionView1.dataSource = self
-        
-        collectionView1.register(CustomsCollectionViewCell.self, forCellWithReuseIdentifier: "CustomsCollectionViewCell")
-        
-        view.backgroundColor = UIColor.backgroundColor()
-        
-        setupLayout()
-    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         buttonCheck.layer.cornerRadius = buttonCheck.bounds.width/2
         buttonCheck.layer.masksToBounds = true
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        collectionview.delegate = self
+        collectionview.dataSource = self
+        collectionview.register(Covid4CollectionViewCell.self, forCellWithReuseIdentifier: "Covid4CollectionViewCell")
+        
+        view.backgroundColor = UIColor.backgroundColor()
+        setupLayout()
+    }
     
-    func setupLayout() {
+    func setupLayout(){
         view.addSubview(avatarImage)
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
         
@@ -108,7 +104,6 @@ class TestRequestViewController: UIViewController {
         viewCovid.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
         viewCovid.topAnchor.constraint(equalTo: avatarImage.bottomAnchor, constant: 24).isActive = true
         viewCovid.heightAnchor.constraint(equalToConstant: view.frame.size.height/6).isActive = true
-//        viewCovid.backgroundColor = UIColor.blue
         
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -119,14 +114,15 @@ class TestRequestViewController: UIViewController {
         label.heightAnchor.constraint(equalToConstant: 30).isActive = true
         label.backgroundColor = UIColor.backgroundColor()
         
-        view.addSubview(collectionView1)
-        collectionView1.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(collectionview)
+        collectionview.translatesAutoresizingMaskIntoConstraints = false
         
-        collectionView1.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24).isActive = true
-        collectionView1.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3).isActive = true
-        collectionView1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
-        collectionView1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
-        collectionView1.backgroundColor = UIColor.backgroundColor()
+        collectionview.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24).isActive = true
+        collectionview.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3).isActive = true
+        collectionview.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
+        collectionview.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
+        collectionview.backgroundColor = UIColor.backgroundColor()
+        
         
         view.addSubview(buttonCheck)
         buttonCheck.translatesAutoresizingMaskIntoConstraints = false
@@ -139,35 +135,37 @@ class TestRequestViewController: UIViewController {
         
     }
     
+    @objc func onButton(){
+        let screen = Covid5ViewController()
+        screen.modalPresentationStyle = .fullScreen
+        self.present(screen, animated: true, completion: nil)
+        
+    }
     
-    
+
+   
+
 }
 
 
-extension TestRequestViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension Covid4CollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  datas1.count
+        datas4.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView1.dequeueReusableCell(withReuseIdentifier: "CustomsCollectionViewCell", for: indexPath) as! CustomsCollectionViewCell
-        cell.image.image = UIImage(named: datas1[indexPath.row].imageIcon)
-        cell.label.text = datas1[indexPath.row].nameLabel
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Covid4CollectionViewCell", for: indexPath) as! Covid4CollectionViewCell
         
+        cell.image.image = UIImage(named: datas4[indexPath.row].imageIcon)
+        cell.label.text = datas4[indexPath.row].nameLabel
         
         return cell
-    }
-    @objc func onButton(){
-        let vc = CovidView2ViewController()
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
     }
     
     
 }
 
-
-extension TestRequestViewController: UICollectionViewDelegateFlowLayout {
+extension Covid4CollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.bounds.width/2 - 10
         let height = collectionView.bounds.height/2 - 10
@@ -175,11 +173,14 @@ extension TestRequestViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        20
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
-    }
+    // bam vao view tronf collectionview de chuyen man:
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        <#code#>
+//    }
 }
-

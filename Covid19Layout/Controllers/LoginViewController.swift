@@ -83,7 +83,7 @@ class LoginViewController: UIViewController {
         
         
         
-        button.addTarget(self, action: #selector(onRegister), for: .touchUpInside)
+        button.addTarget(self, action: #selector(onLogin), for: .touchUpInside)
         
        
         
@@ -100,6 +100,8 @@ class LoginViewController: UIViewController {
     let registerButton: UIButton = {
         let register = UIButton()
         register.translatesAutoresizingMaskIntoConstraints = false
+        
+        register.addTarget(self, action: #selector(onRegister), for: .touchUpInside)
         
         
 
@@ -205,6 +207,12 @@ class LoginViewController: UIViewController {
         let a = RegisterViewController()
         a.modalPresentationStyle = .fullScreen
         present(a, animated: true, completion: nil)
+    }
+    
+    @objc func onLogin(){
+        let login = HomepageViewController()
+        login.modalPresentationStyle = .fullScreen
+        present(login, animated: true, completion: nil)
     }
     
     

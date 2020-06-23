@@ -96,10 +96,12 @@ class RegisterViewController: UIViewController {
         button.layer.cornerRadius = 8
         button.layer.masksToBounds = true
         
+        button.addTarget(self, action: #selector(pop), for: .touchUpInside)
+        
         
         return button
     }()
-    // NSMutablePar
+    // NSMutableAtributedString
     let ByRegistingLabel: UILabel = {
         let RegistingLabel = UILabel()
         
@@ -275,6 +277,10 @@ class RegisterViewController: UIViewController {
     }
     
     @objc func onDismiss(){
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func pop(){
         self.dismiss(animated: true, completion: nil)
     }
     

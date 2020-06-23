@@ -23,7 +23,7 @@ class CustomsCollectionViewCell: UICollectionViewCell {
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.yellow
+        self.backgroundColor = UIColor.white
         self.layer.cornerRadius = 6
         self.layer.masksToBounds = true
         
@@ -41,7 +41,7 @@ class CustomsCollectionViewCell: UICollectionViewCell {
         image.translatesAutoresizingMaskIntoConstraints = false
         
         image.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        image.topAnchor.constraint(equalTo: self.topAnchor, constant: 16).isActive = true
+        image.topAnchor.constraint(equalTo: self.topAnchor, constant: 32).isActive = true
         image.widthAnchor.constraint(equalToConstant: 25).isActive = true
         image.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
@@ -55,7 +55,7 @@ class CustomsCollectionViewCell: UICollectionViewCell {
         label.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8).isActive = true
         label.heightAnchor.constraint(equalToConstant: 20).isActive = true
         //        label.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
-        label.backgroundColor = .brown
+//        label.backgroundColor = .brown
     }
     
 }

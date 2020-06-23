@@ -11,7 +11,8 @@
 		CE019CA4248E2D1A002B7111 /* CustomsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE019CA3248E2D1A002B7111 /* CustomsTextField.swift */; };
 		CE019CA6248E378F002B7111 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE019CA5248E378F002B7111 /* RegisterViewController.swift */; };
 		CE18B38F2494756C0022AA46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18B38E2494756C0022AA46 /* Data.swift */; };
-		CE3AF7932497706B00AB3A87 /* CustomsLabel + Oval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AF7922497706B00AB3A87 /* CustomsLabel + Oval.swift */; };
+		CE2459122498BE00008E2DD1 /* CovidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2459112498BE00008E2DD1 /* CovidView.swift */; };
+		CE2459142498C968008E2DD1 /* CovidView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2459132498C968008E2DD1 /* CovidView2ViewController.swift */; };
 		CE44A743248A47CA00FB4948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44A742248A47CA00FB4948 /* AppDelegate.swift */; };
 		CE44A745248A47CA00FB4948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44A744248A47CA00FB4948 /* SceneDelegate.swift */; };
 		CE44A747248A47CA00FB4948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44A746248A47CA00FB4948 /* ViewController.swift */; };
@@ -27,6 +28,13 @@
 		CE5B76302493308400398B60 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B762F2493308400398B60 /* Datas.swift */; };
 		CE5B763724937C6600398B60 /* CustomsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B763624937C6600398B60 /* CustomsCollectionViewCell.swift */; };
 		CE5B763D249380B700398B60 /* TestRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B763C249380B700398B60 /* TestRequestViewController.swift */; };
+		CE6EFEAE249A1EFA00AB943B /* Covid3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EFEAD249A1EFA00AB943B /* Covid3ViewController.swift */; };
+		CE6EFEB0249A20BA00AB943B /* Covid4CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EFEAF249A20BA00AB943B /* Covid4CollectionViewController.swift */; };
+		CE6EFEB2249A220D00AB943B /* Covid4CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EFEB1249A220D00AB943B /* Covid4CollectionViewCell.swift */; };
+		CE6EFEB4249A2C6000AB943B /* Data4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EFEB3249A2C6000AB943B /* Data4.swift */; };
+		CED1CCB124A2043300003496 /* Data5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1CCB024A2043300003496 /* Data5.swift */; };
+		CEF3ECAD249C5DEB00CEA61E /* Covid5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3ECAC249C5DEB00CEA61E /* Covid5ViewController.swift */; };
+		CEF3ECAF249C67F100CEA61E /* Covid5TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3ECAE249C67F100CEA61E /* Covid5TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +42,8 @@
 		CE019CA3248E2D1A002B7111 /* CustomsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsTextField.swift; sourceTree = "<group>"; };
 		CE019CA5248E378F002B7111 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE18B38E2494756C0022AA46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		CE3AF7922497706B00AB3A87 /* CustomsLabel + Oval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomsLabel + Oval.swift"; sourceTree = "<group>"; };
+		CE2459112498BE00008E2DD1 /* CovidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidView.swift; sourceTree = "<group>"; };
+		CE2459132498C968008E2DD1 /* CovidView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidView2ViewController.swift; sourceTree = "<group>"; };
 		CE44A73F248A47CA00FB4948 /* Covid19Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid19Layout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE44A742248A47CA00FB4948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE44A744248A47CA00FB4948 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +61,13 @@
 		CE5B762F2493308400398B60 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
 		CE5B763624937C6600398B60 /* CustomsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE5B763C249380B700398B60 /* TestRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRequestViewController.swift; sourceTree = "<group>"; };
+		CE6EFEAD249A1EFA00AB943B /* Covid3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid3ViewController.swift; sourceTree = "<group>"; };
+		CE6EFEAF249A20BA00AB943B /* Covid4CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid4CollectionViewController.swift; sourceTree = "<group>"; };
+		CE6EFEB1249A220D00AB943B /* Covid4CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid4CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE6EFEB3249A2C6000AB943B /* Data4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data4.swift; sourceTree = "<group>"; };
+		CED1CCB024A2043300003496 /* Data5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data5.swift; sourceTree = "<group>"; };
+		CEF3ECAC249C5DEB00CEA61E /* Covid5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid5ViewController.swift; sourceTree = "<group>"; };
+		CEF3ECAE249C67F100CEA61E /* Covid5TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid5TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +84,9 @@
 		CE019CA7248E37C7002B7111 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE2459112498BE00008E2DD1 /* CovidView.swift */,
 				CE019CA1248E26ED002B7111 /* CustomsButton.swift */,
 				CE019CA3248E2D1A002B7111 /* CustomsTextField.swift */,
-				CE3AF7922497706B00AB3A87 /* CustomsLabel + Oval.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +133,10 @@
 				CE019CA5248E378F002B7111 /* RegisterViewController.swift */,
 				CE5B7631249371D800398B60 /* CustomsTableViewCell */,
 				CEBDAE7D2497163E004AE67E /* CustomCollectionView */,
+				CE2459132498C968008E2DD1 /* CovidView2ViewController.swift */,
+				CE6EFEAD249A1EFA00AB943B /* Covid3ViewController.swift */,
+				CEF3ECAB249C5D8D00CEA61E /* Covid4Collection */,
+				CE78F68124A1EE24007E8347 /* Covid5TableView */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -139,6 +159,16 @@
 			path = CustomsTableViewCell;
 			sourceTree = "<group>";
 		};
+		CE78F68124A1EE24007E8347 /* Covid5TableView */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3ECAC249C5DEB00CEA61E /* Covid5ViewController.swift */,
+				CEF3ECAE249C67F100CEA61E /* Covid5TableViewCell.swift */,
+				CED1CCB024A2043300003496 /* Data5.swift */,
+			);
+			path = Covid5TableView;
+			sourceTree = "<group>";
+		};
 		CEBDAE7D2497163E004AE67E /* CustomCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +177,16 @@
 				CE18B38E2494756C0022AA46 /* Data.swift */,
 			);
 			path = CustomCollectionView;
+			sourceTree = "<group>";
+		};
+		CEF3ECAB249C5D8D00CEA61E /* Covid4Collection */ = {
+			isa = PBXGroup;
+			children = (
+				CE6EFEAF249A20BA00AB943B /* Covid4CollectionViewController.swift */,
+				CE6EFEB1249A220D00AB943B /* Covid4CollectionViewCell.swift */,
+				CE6EFEB3249A2C6000AB943B /* Data4.swift */,
+			);
+			path = Covid4Collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,20 +262,28 @@
 			files = (
 				CE019CA4248E2D1A002B7111 /* CustomsTextField.swift in Sources */,
 				CE5B76302493308400398B60 /* Datas.swift in Sources */,
+				CED1CCB124A2043300003496 /* Data5.swift in Sources */,
 				CE44A758248A487800FB4948 /* CovidViewController.swift in Sources */,
+				CE6EFEB0249A20BA00AB943B /* Covid4CollectionViewController.swift in Sources */,
 				CE49A1D32491DEC30039FA85 /* HomepageViewController.swift in Sources */,
 				CE44A747248A47CA00FB4948 /* ViewController.swift in Sources */,
+				CE6EFEB2249A220D00AB943B /* Covid4CollectionViewCell.swift in Sources */,
 				CE019CA6248E378F002B7111 /* RegisterViewController.swift in Sources */,
 				CE019CA2248E26ED002B7111 /* CustomsButton.swift in Sources */,
+				CEF3ECAF249C67F100CEA61E /* Covid5TableViewCell.swift in Sources */,
+				CE2459122498BE00008E2DD1 /* CovidView.swift in Sources */,
 				CE49A1D524922EEF0039FA85 /* CustomsTableViewCell.swift in Sources */,
 				CE44A743248A47CA00FB4948 /* AppDelegate.swift in Sources */,
+				CE2459142498C968008E2DD1 /* CovidView2ViewController.swift in Sources */,
 				CE5B763D249380B700398B60 /* TestRequestViewController.swift in Sources */,
 				CE4AB4A62490DD4B00E3F12A /* TimerPresentViewController.swift in Sources */,
 				CE49A1D02491D0E40039FA85 /* Extension + Uicolor.swift in Sources */,
 				CE5A5528248A7629009C2505 /* LoginViewController.swift in Sources */,
 				CE44A745248A47CA00FB4948 /* SceneDelegate.swift in Sources */,
+				CE6EFEB4249A2C6000AB943B /* Data4.swift in Sources */,
+				CEF3ECAD249C5DEB00CEA61E /* Covid5ViewController.swift in Sources */,
 				CE5B763724937C6600398B60 /* CustomsCollectionViewCell.swift in Sources */,
-				CE3AF7932497706B00AB3A87 /* CustomsLabel + Oval.swift in Sources */,
+				CE6EFEAE249A1EFA00AB943B /* Covid3ViewController.swift in Sources */,
 				CE18B38F2494756C0022AA46 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

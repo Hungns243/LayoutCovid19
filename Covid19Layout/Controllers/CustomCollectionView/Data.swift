@@ -21,5 +21,6 @@ func createData1() -> [Data] {
     let data3 = Data(imageIcon: "icon2", nameLabel: "Family(senior)")
     let data4 = Data(imageIcon: "icon3", nameLabel: "Emergency")
     
+    
     return [data1, data2, data3, data4]
 }

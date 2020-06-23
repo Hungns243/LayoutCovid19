@@ -25,6 +25,10 @@ extension UIColor {
         return UIColor(red: 0.25, green: 0.38, blue: 0.45, alpha: 1.00)
     }
     
+    class func fontCovid() -> UIColor {
+        return UIColor(red: 0.25, green: 0.38, blue: 0.45, alpha: 1.00)
+    }
+    
     
     
 }

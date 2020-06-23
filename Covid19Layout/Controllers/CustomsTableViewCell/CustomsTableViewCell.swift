@@ -78,7 +78,7 @@ class CustomsTableViewCell: UITableViewCell {
     }
 
     override func draw(_ rect: CGRect) {
-        print(containerView.frame)
+        
         ovalView.layer.cornerRadius = ovalView.bounds.width/2
         ovalView.layer.masksToBounds = true
         containerView.clipsToBounds = true
