@@ -1,16 +1,16 @@
 //
-//  Covid5ViewController.swift
+//  Covid6ViewController.swift
 //  Covid19Layout
 //
-//  Created by User on 6/19/20.
+//  Created by User on 6/24/20.
 //  Copyright © 2020 hung. All rights reserved.
 //
 
 import UIKit
 
-class Covid5ViewController: UIViewController {
+class Covid6ViewController: UIViewController {
     
-    let datas = createData5()
+    let datas = createData6()
     
     let menuImage: UIImageView = {
         let image = UIImageView()
@@ -35,7 +35,7 @@ class Covid5ViewController: UIViewController {
     
     let label: UILabel = {
         let label1 = UILabel()
-        label1.text = "Do you have any of the following life-threatening symptoms?"
+        label1.text = "Do you have any of the following symptoms?"
         label1.numberOfLines = 0
         label1.font = UIFont.systemFont(ofSize: 18)
         label1.backgroundColor = UIColor.backgroundColor()
@@ -45,7 +45,7 @@ class Covid5ViewController: UIViewController {
     let tableView: UITableView = {
         let tableview = UITableView()
         tableview.rowHeight = 50
-        tableview.backgroundColor = UIColor.backgroundColor()
+        tableview.showsVerticalScrollIndicator = false
         return tableview
     }()
     
@@ -70,20 +70,22 @@ class Covid5ViewController: UIViewController {
         buttonCheck.layer.cornerRadius = buttonCheck.bounds.width/2
         buttonCheck.layer.masksToBounds = true
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(Covid5TableViewCell.self, forCellReuseIdentifier: "Covid5TableViewCell")
+        tableView.register(Covid6TableViewCell.self, forCellReuseIdentifier: "Covid6TableViewCell")
         
         view.backgroundColor = UIColor.backgroundColor()
-        
         setupLayout()
+
+        
     }
     
     func setupLayout(){
+        
         view.addSubview(avatarImage)
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
         
@@ -120,12 +122,13 @@ class Covid5ViewController: UIViewController {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
-        tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
+        tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.25).isActive = true
         tableView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
         tableView.separatorStyle = .none
-        tableView.showsVerticalScrollIndicator = false
+        tableView.backgroundColor = UIColor.backgroundColor()
+        
         
         view.addSubview(buttonCheck)
         buttonCheck.translatesAutoresizingMaskIntoConstraints = false
@@ -135,30 +138,31 @@ class Covid5ViewController: UIViewController {
         buttonCheck.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         buttonCheck.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         
+        
     }
     
     @objc func onButton(){
-        let screen = Covid6ViewController()
+        
+        let screen = Covid7ViewController()
         screen.modalPresentationStyle = .fullScreen
         self.present(screen, animated: true, completion: nil)
     }
     
-    
-    
-    
+
+   
+
 }
 
 
-extension Covid5ViewController: UITableViewDelegate,UITableViewDataSource {
+extension Covid6ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Covid5TableViewCell", for: indexPath) as! Covid5TableViewCell
-        
-        cell.imageBox.image = UIImage(named: datas[indexPath.row].imageBox)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Covid6TableViewCell", for: indexPath) as! Covid6TableViewCell
         cell.nameLabel1.text = datas[indexPath.row].nameLabel
+        cell.imageBox.image = UIImage(named: datas[indexPath.row].imageBox)
         
         return cell
     }

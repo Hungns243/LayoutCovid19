@@ -1,14 +1,14 @@
 //
-//  CustomsCollectionViewCell.swift
+//  Covid9CollectionViewCell.swift
 //  Covid19Layout
 //
-//  Created by User on 6/12/20.
+//  Created by User on 6/24/20.
 //  Copyright © 2020 hung. All rights reserved.
 //
 
 import UIKit
 
-class CustomsCollectionViewCell: UICollectionViewCell {
+class Covid9CollectionViewCell: UICollectionViewCell {
     
     let containerView: UIView = {
         let view = UIView()
@@ -74,5 +74,6 @@ class CustomsCollectionViewCell: UICollectionViewCell {
         //        label.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
         //        label.backgroundColor = .brown
     }
+
     
 }

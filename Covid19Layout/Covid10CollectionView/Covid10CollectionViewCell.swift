@@ -1,14 +1,14 @@
 //
-//  CustomsCollectionViewCell.swift
+//  Covid10CollectionViewCell.swift
 //  Covid19Layout
 //
-//  Created by User on 6/12/20.
+//  Created by User on 6/24/20.
 //  Copyright © 2020 hung. All rights reserved.
 //
 
 import UIKit
 
-class CustomsCollectionViewCell: UICollectionViewCell {
+class Covid10CollectionViewCell: UICollectionViewCell {
     
     let containerView: UIView = {
         let view = UIView()

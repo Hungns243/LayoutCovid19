@@ -13,6 +13,13 @@
 		CE18B38F2494756C0022AA46 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18B38E2494756C0022AA46 /* Data.swift */; };
 		CE2459122498BE00008E2DD1 /* CovidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2459112498BE00008E2DD1 /* CovidView.swift */; };
 		CE2459142498C968008E2DD1 /* CovidView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2459132498C968008E2DD1 /* CovidView2ViewController.swift */; };
+		CE3B8E7B24A2FC2B0062D32B /* Data6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B8E7A24A2FC2B0062D32B /* Data6.swift */; };
+		CE3B8E8024A307040062D32B /* Covid8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B8E7F24A307040062D32B /* Covid8ViewController.swift */; };
+		CE3B8E8224A3072F0062D32B /* Covid8TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B8E8124A3072F0062D32B /* Covid8TableViewCell.swift */; };
+		CE3B8E8424A3073B0062D32B /* Data8.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B8E8324A3073B0062D32B /* Data8.swift */; };
+		CE3B8E8724A30A050062D32B /* Covid7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B8E8624A30A050062D32B /* Covid7ViewController.swift */; };
+		CE3B8E8924A30A370062D32B /* Covid7CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B8E8824A30A370062D32B /* Covid7CollectionViewCell.swift */; };
+		CE3B8E8B24A30A480062D32B /* Data7.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B8E8A24A30A480062D32B /* Data7.swift */; };
 		CE44A743248A47CA00FB4948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44A742248A47CA00FB4948 /* AppDelegate.swift */; };
 		CE44A745248A47CA00FB4948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44A744248A47CA00FB4948 /* SceneDelegate.swift */; };
 		CE44A747248A47CA00FB4948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44A746248A47CA00FB4948 /* ViewController.swift */; };
@@ -24,6 +31,8 @@
 		CE49A1D32491DEC30039FA85 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49A1D22491DEC30039FA85 /* HomepageViewController.swift */; };
 		CE49A1D524922EEF0039FA85 /* CustomsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49A1D424922EEF0039FA85 /* CustomsTableViewCell.swift */; };
 		CE4AB4A62490DD4B00E3F12A /* TimerPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AB4A52490DD4B00E3F12A /* TimerPresentViewController.swift */; };
+		CE51D95A24A2F58B00B96413 /* Covid6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51D95924A2F58B00B96413 /* Covid6ViewController.swift */; };
+		CE51D95C24A2F90500B96413 /* Covid6TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51D95B24A2F90500B96413 /* Covid6TableViewCell.swift */; };
 		CE5A5528248A7629009C2505 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A5527248A7629009C2505 /* LoginViewController.swift */; };
 		CE5B76302493308400398B60 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B762F2493308400398B60 /* Datas.swift */; };
 		CE5B763724937C6600398B60 /* CustomsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B763624937C6600398B60 /* CustomsCollectionViewCell.swift */; };
@@ -32,6 +41,13 @@
 		CE6EFEB0249A20BA00AB943B /* Covid4CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EFEAF249A20BA00AB943B /* Covid4CollectionViewController.swift */; };
 		CE6EFEB2249A220D00AB943B /* Covid4CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EFEB1249A220D00AB943B /* Covid4CollectionViewCell.swift */; };
 		CE6EFEB4249A2C6000AB943B /* Data4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EFEB3249A2C6000AB943B /* Data4.swift */; };
+		CEA682DE24A348B200FCCD4A /* Covid9CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA682DD24A348B200FCCD4A /* Covid9CollectionViewCell.swift */; };
+		CEA682E024A348D100FCCD4A /* Covid9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA682DF24A348D100FCCD4A /* Covid9ViewController.swift */; };
+		CEA682E224A348DC00FCCD4A /* Data9.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA682E124A348DC00FCCD4A /* Data9.swift */; };
+		CEA682E524A35AC300FCCD4A /* Covid10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA682E424A35AC300FCCD4A /* Covid10ViewController.swift */; };
+		CEA682E924A35B0100FCCD4A /* Covid10CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA682E824A35B0100FCCD4A /* Covid10CollectionViewCell.swift */; };
+		CEA682EB24A35B1200FCCD4A /* Data10.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA682EA24A35B1200FCCD4A /* Data10.swift */; };
+		CEA682EE24A35E3E00FCCD4A /* Covid11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA682ED24A35E3E00FCCD4A /* Covid11ViewController.swift */; };
 		CED1CCB124A2043300003496 /* Data5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1CCB024A2043300003496 /* Data5.swift */; };
 		CEF3ECAD249C5DEB00CEA61E /* Covid5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3ECAC249C5DEB00CEA61E /* Covid5ViewController.swift */; };
 		CEF3ECAF249C67F100CEA61E /* Covid5TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3ECAE249C67F100CEA61E /* Covid5TableViewCell.swift */; };
@@ -44,6 +60,13 @@
 		CE18B38E2494756C0022AA46 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		CE2459112498BE00008E2DD1 /* CovidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidView.swift; sourceTree = "<group>"; };
 		CE2459132498C968008E2DD1 /* CovidView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidView2ViewController.swift; sourceTree = "<group>"; };
+		CE3B8E7A24A2FC2B0062D32B /* Data6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data6.swift; sourceTree = "<group>"; };
+		CE3B8E7F24A307040062D32B /* Covid8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid8ViewController.swift; sourceTree = "<group>"; };
+		CE3B8E8124A3072F0062D32B /* Covid8TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid8TableViewCell.swift; sourceTree = "<group>"; };
+		CE3B8E8324A3073B0062D32B /* Data8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data8.swift; sourceTree = "<group>"; };
+		CE3B8E8624A30A050062D32B /* Covid7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid7ViewController.swift; sourceTree = "<group>"; };
+		CE3B8E8824A30A370062D32B /* Covid7CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid7CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE3B8E8A24A30A480062D32B /* Data7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data7.swift; sourceTree = "<group>"; };
 		CE44A73F248A47CA00FB4948 /* Covid19Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid19Layout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE44A742248A47CA00FB4948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE44A744248A47CA00FB4948 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +80,8 @@
 		CE49A1D22491DEC30039FA85 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		CE49A1D424922EEF0039FA85 /* CustomsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsTableViewCell.swift; sourceTree = "<group>"; };
 		CE4AB4A52490DD4B00E3F12A /* TimerPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresentViewController.swift; sourceTree = "<group>"; };
+		CE51D95924A2F58B00B96413 /* Covid6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid6ViewController.swift; sourceTree = "<group>"; };
+		CE51D95B24A2F90500B96413 /* Covid6TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid6TableViewCell.swift; sourceTree = "<group>"; };
 		CE5A5527248A7629009C2505 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE5B762F2493308400398B60 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
 		CE5B763624937C6600398B60 /* CustomsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +90,13 @@
 		CE6EFEAF249A20BA00AB943B /* Covid4CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid4CollectionViewController.swift; sourceTree = "<group>"; };
 		CE6EFEB1249A220D00AB943B /* Covid4CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid4CollectionViewCell.swift; sourceTree = "<group>"; };
 		CE6EFEB3249A2C6000AB943B /* Data4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data4.swift; sourceTree = "<group>"; };
+		CEA682DD24A348B200FCCD4A /* Covid9CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid9CollectionViewCell.swift; sourceTree = "<group>"; };
+		CEA682DF24A348D100FCCD4A /* Covid9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid9ViewController.swift; sourceTree = "<group>"; };
+		CEA682E124A348DC00FCCD4A /* Data9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data9.swift; sourceTree = "<group>"; };
+		CEA682E424A35AC300FCCD4A /* Covid10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid10ViewController.swift; sourceTree = "<group>"; };
+		CEA682E824A35B0100FCCD4A /* Covid10CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid10CollectionViewCell.swift; sourceTree = "<group>"; };
+		CEA682EA24A35B1200FCCD4A /* Data10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data10.swift; sourceTree = "<group>"; };
+		CEA682ED24A35E3E00FCCD4A /* Covid11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid11ViewController.swift; sourceTree = "<group>"; };
 		CED1CCB024A2043300003496 /* Data5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data5.swift; sourceTree = "<group>"; };
 		CEF3ECAC249C5DEB00CEA61E /* Covid5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid5ViewController.swift; sourceTree = "<group>"; };
 		CEF3ECAE249C67F100CEA61E /* Covid5TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid5TableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +123,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		CE3B8E7E24A306610062D32B /* Covid6TableView */ = {
+			isa = PBXGroup;
+			children = (
+				CE51D95924A2F58B00B96413 /* Covid6ViewController.swift */,
+				CE51D95B24A2F90500B96413 /* Covid6TableViewCell.swift */,
+				CE3B8E7A24A2FC2B0062D32B /* Data6.swift */,
+			);
+			path = Covid6TableView;
+			sourceTree = "<group>";
+		};
+		CE3B8E8524A307450062D32B /* Covid8TableView */ = {
+			isa = PBXGroup;
+			children = (
+				CE3B8E7F24A307040062D32B /* Covid8ViewController.swift */,
+				CE3B8E8124A3072F0062D32B /* Covid8TableViewCell.swift */,
+				CE3B8E8324A3073B0062D32B /* Data8.swift */,
+			);
+			path = Covid8TableView;
+			sourceTree = "<group>";
+		};
+		CE3B8E8C24A30A520062D32B /* Covid7CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CE3B8E8624A30A050062D32B /* Covid7ViewController.swift */,
+				CE3B8E8824A30A370062D32B /* Covid7CollectionViewCell.swift */,
+				CE3B8E8A24A30A480062D32B /* Data7.swift */,
+			);
+			path = Covid7CollectionView;
+			sourceTree = "<group>";
+		};
 		CE44A736248A47CA00FB4948 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +173,12 @@
 			isa = PBXGroup;
 			children = (
 				CE44A756248A482B00FB4948 /* Controllers */,
+				CE3B8E7E24A306610062D32B /* Covid6TableView */,
+				CE3B8E8C24A30A520062D32B /* Covid7CollectionView */,
+				CE3B8E8524A307450062D32B /* Covid8TableView */,
+				CEA682E324A3497A00FCCD4A /* Covid9CollectionView */,
+				CEA682EC24A35B2000FCCD4A /* Covid10CollectionView */,
+				CEA682ED24A35E3E00FCCD4A /* Covid11ViewController.swift */,
 				CE019CA7248E37C7002B7111 /* Views */,
 				CE49A1D12491D0EA0039FA85 /* Extensions */,
 				CE44A742248A47CA00FB4948 /* AppDelegate.swift */,
@@ -167,6 +235,26 @@
 				CED1CCB024A2043300003496 /* Data5.swift */,
 			);
 			path = Covid5TableView;
+			sourceTree = "<group>";
+		};
+		CEA682E324A3497A00FCCD4A /* Covid9CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CEA682DF24A348D100FCCD4A /* Covid9ViewController.swift */,
+				CEA682DD24A348B200FCCD4A /* Covid9CollectionViewCell.swift */,
+				CEA682E124A348DC00FCCD4A /* Data9.swift */,
+			);
+			path = Covid9CollectionView;
+			sourceTree = "<group>";
+		};
+		CEA682EC24A35B2000FCCD4A /* Covid10CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CEA682E424A35AC300FCCD4A /* Covid10ViewController.swift */,
+				CEA682E824A35B0100FCCD4A /* Covid10CollectionViewCell.swift */,
+				CEA682EA24A35B1200FCCD4A /* Data10.swift */,
+			);
+			path = Covid10CollectionView;
 			sourceTree = "<group>";
 		};
 		CEBDAE7D2497163E004AE67E /* CustomCollectionView */ = {
@@ -260,12 +348,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3B8E8724A30A050062D32B /* Covid7ViewController.swift in Sources */,
 				CE019CA4248E2D1A002B7111 /* CustomsTextField.swift in Sources */,
 				CE5B76302493308400398B60 /* Datas.swift in Sources */,
+				CE3B8E8B24A30A480062D32B /* Data7.swift in Sources */,
 				CED1CCB124A2043300003496 /* Data5.swift in Sources */,
 				CE44A758248A487800FB4948 /* CovidViewController.swift in Sources */,
+				CEA682EE24A35E3E00FCCD4A /* Covid11ViewController.swift in Sources */,
+				CEA682E924A35B0100FCCD4A /* Covid10CollectionViewCell.swift in Sources */,
+				CE3B8E8424A3073B0062D32B /* Data8.swift in Sources */,
 				CE6EFEB0249A20BA00AB943B /* Covid4CollectionViewController.swift in Sources */,
 				CE49A1D32491DEC30039FA85 /* HomepageViewController.swift in Sources */,
+				CEA682EB24A35B1200FCCD4A /* Data10.swift in Sources */,
 				CE44A747248A47CA00FB4948 /* ViewController.swift in Sources */,
 				CE6EFEB2249A220D00AB943B /* Covid4CollectionViewCell.swift in Sources */,
 				CE019CA6248E378F002B7111 /* RegisterViewController.swift in Sources */,
@@ -276,15 +370,25 @@
 				CE44A743248A47CA00FB4948 /* AppDelegate.swift in Sources */,
 				CE2459142498C968008E2DD1 /* CovidView2ViewController.swift in Sources */,
 				CE5B763D249380B700398B60 /* TestRequestViewController.swift in Sources */,
+				CEA682DE24A348B200FCCD4A /* Covid9CollectionViewCell.swift in Sources */,
+				CE3B8E8924A30A370062D32B /* Covid7CollectionViewCell.swift in Sources */,
 				CE4AB4A62490DD4B00E3F12A /* TimerPresentViewController.swift in Sources */,
 				CE49A1D02491D0E40039FA85 /* Extension + Uicolor.swift in Sources */,
 				CE5A5528248A7629009C2505 /* LoginViewController.swift in Sources */,
 				CE44A745248A47CA00FB4948 /* SceneDelegate.swift in Sources */,
+				CE3B8E8224A3072F0062D32B /* Covid8TableViewCell.swift in Sources */,
 				CE6EFEB4249A2C6000AB943B /* Data4.swift in Sources */,
+				CEA682E524A35AC300FCCD4A /* Covid10ViewController.swift in Sources */,
+				CEA682E224A348DC00FCCD4A /* Data9.swift in Sources */,
 				CEF3ECAD249C5DEB00CEA61E /* Covid5ViewController.swift in Sources */,
+				CE3B8E7B24A2FC2B0062D32B /* Data6.swift in Sources */,
 				CE5B763724937C6600398B60 /* CustomsCollectionViewCell.swift in Sources */,
+				CEA682E024A348D100FCCD4A /* Covid9ViewController.swift in Sources */,
 				CE6EFEAE249A1EFA00AB943B /* Covid3ViewController.swift in Sources */,
+				CE51D95C24A2F90500B96413 /* Covid6TableViewCell.swift in Sources */,
 				CE18B38F2494756C0022AA46 /* Data.swift in Sources */,
+				CE51D95A24A2F58B00B96413 /* Covid6ViewController.swift in Sources */,
+				CE3B8E8024A307040062D32B /* Covid8ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

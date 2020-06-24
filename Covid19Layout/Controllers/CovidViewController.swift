@@ -50,8 +50,8 @@ class CovidViewController: UIViewController {
         
         //khoi tao timer
         time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runLoop), userInfo: nil, repeats: true)
-        n = 3
-        count = 3
+        n = 2
+        count = 2
 
     }
     

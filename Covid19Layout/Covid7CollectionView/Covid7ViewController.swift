@@ -1,16 +1,18 @@
 //
-//  Covid5ViewController.swift
+//  Covid7ViewController.swift
 //  Covid19Layout
 //
-//  Created by User on 6/19/20.
+//  Created by User on 6/24/20.
 //  Copyright © 2020 hung. All rights reserved.
 //
 
 import UIKit
 
-class Covid5ViewController: UIViewController {
+class Covid7ViewController: UIViewController {
     
-    let datas = createData5()
+    let datas = createData7()
+    
+    
     
     let menuImage: UIImageView = {
         let image = UIImageView()
@@ -35,18 +37,29 @@ class Covid5ViewController: UIViewController {
     
     let label: UILabel = {
         let label1 = UILabel()
-        label1.text = "Do you have any of the following life-threatening symptoms?"
+        label1.text = "In the two weeks before you felt sick, did you:"
         label1.numberOfLines = 0
         label1.font = UIFont.systemFont(ofSize: 18)
         label1.backgroundColor = UIColor.backgroundColor()
         return label1
     }()
     
-    let tableView: UITableView = {
-        let tableview = UITableView()
-        tableview.rowHeight = 50
-        tableview.backgroundColor = UIColor.backgroundColor()
-        return tableview
+    let label2: UILabel = {
+        let label2 = UILabel()
+        
+        label2.text = "Have contact with someone diagnosed with COVID-19 Or Live in or visit a place where COVID-19 is spreading "
+        label2.numberOfLines = 0
+        label2.font = UIFont.systemFont(ofSize: 18)
+        label2.backgroundColor = UIColor.backgroundColor()
+//        label2.backgroundColor = .red
+        
+        return label2
+    }()
+    
+    let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        return view
     }()
     
     let buttonCheck: UIButton = {
@@ -70,20 +83,24 @@ class Covid5ViewController: UIViewController {
         buttonCheck.layer.cornerRadius = buttonCheck.bounds.width/2
         buttonCheck.layer.masksToBounds = true
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(Covid5TableViewCell.self, forCellReuseIdentifier: "Covid5TableViewCell")
         
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(Covid7CollectionViewCell.self, forCellWithReuseIdentifier: "Covid7CollectionViewCell")
+
         view.backgroundColor = UIColor.backgroundColor()
-        
         setupLayout()
     }
     
     func setupLayout(){
+        
+        
+        
+        
         view.addSubview(avatarImage)
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
         
@@ -117,15 +134,22 @@ class Covid5ViewController: UIViewController {
         label.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9).isActive = true
         label.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(label2)
+        label2.translatesAutoresizingMaskIntoConstraints = false
         
-        tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
-        tableView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24).isActive = true
-        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
-        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
-        tableView.separatorStyle = .none
-        tableView.showsVerticalScrollIndicator = false
+        label2.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 16).isActive = true
+        label2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
+        label2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
+        label2.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1).isActive = true
+        
+        view.addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        
+        collectionView.topAnchor.constraint(equalTo: label2.bottomAnchor, constant: 24).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
+        collectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3).isActive = true
+        collectionView.backgroundColor = UIColor.backgroundColor()
         
         view.addSubview(buttonCheck)
         buttonCheck.translatesAutoresizingMaskIntoConstraints = false
@@ -134,34 +158,53 @@ class Covid5ViewController: UIViewController {
         buttonCheck.heightAnchor.constraint(equalToConstant: 60).isActive = true
         buttonCheck.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         buttonCheck.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
-        
     }
     
     @objc func onButton(){
-        let screen = Covid6ViewController()
+        
+        let screen = Covid8ViewController()
         screen.modalPresentationStyle = .fullScreen
         self.present(screen, animated: true, completion: nil)
+        
     }
+
     
-    
-    
-    
+
 }
 
 
-extension Covid5ViewController: UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension Covid7ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return datas.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Covid5TableViewCell", for: indexPath) as! Covid5TableViewCell
-        
-        cell.imageBox.image = UIImage(named: datas[indexPath.row].imageBox)
-        cell.nameLabel1.text = datas[indexPath.row].nameLabel
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Covid7CollectionViewCell", for: indexPath) as! Covid7CollectionViewCell
+        cell.image.image = UIImage(named: datas[indexPath.row].imageIcon)
+        cell.label.text = datas[indexPath.row].nameLabel
         
         return cell
     }
     
-    
 }
+
+extension Covid7ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width/2 - 10
+        let height = collectionView.bounds.height/2 - 10
+        return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        20
+    }
+    
+    // bam vao view tronf collectionview de chuyen man:
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        <#code#>
+//    }
+}
+
