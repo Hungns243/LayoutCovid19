@@ -141,6 +141,10 @@ class Covid8ViewController: UIViewController {
     
 
    @objc func onButton(){
+    
+    let screen = Covid9ViewController()
+    screen.modalPresentationStyle = .fullScreen
+    self.present(screen, animated: true, completion: nil)
        
    }
     

@@ -137,10 +137,10 @@ class Covid10ViewController: UIViewController {
         buttonCheck.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
     }
     @objc func onButton(){
-        //
-        //           let screen = Covid8ViewController()
-        //           screen.modalPresentationStyle = .fullScreen
-        //           self.present(screen, animated: true, completion: nil)
+        
+                   let screen = Covid11ViewController()
+                   screen.modalPresentationStyle = .fullScreen
+                   self.present(screen, animated: true, completion: nil)
         
     }
     
