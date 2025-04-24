@@ -1,10 +1,7 @@
 //
 //  Covid5ViewController.swift
 //  Covid19Layout
-//
-//  Created by User on 6/19/20.
-//  Copyright © 2020 hung. All rights reserved.
-//
+
 
 import UIKit
 
@@ -55,7 +52,7 @@ class Covid5ViewController: UIViewController {
         let image = UIImage(named: "check")
         button.frame = CGRect(x: 50, y: 50, width: 30, height: 30)
         button.setImage(image, for: .normal)
-        button.addTarget(self, action: #selector(onButton), for: .touchUpInside)
+        button.addTarget(Covid5ViewController.self, action: #selector(onButton), for: .touchUpInside)
         
         // đổi màu icon trong button.
         button.setImage(image?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate), for: .normal)

@@ -1,10 +1,7 @@
 //
 //  Data9.swift
 //  Covid19Layout
-//
-//  Created by User on 6/24/20.
-//  Copyright © 2020 hung. All rights reserved.
-//
+
 
 import Foundation
 

@@ -55,7 +55,7 @@ class Covid10ViewController: UIViewController {
         let image = UIImage(named: "check")
         button.frame = CGRect(x: 50, y: 50, width: 30, height: 30)
         button.setImage(image, for: .normal)
-        button.addTarget(self, action: #selector(onButton), for: .touchUpInside)
+        button.addTarget(Covid10ViewController.self, action: #selector(onButton), for: .touchUpInside)
         
         // đổi màu icon trong button.
         button.setImage(image?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate), for: .normal)

@@ -1,10 +1,7 @@
 //
 //  LoginViewController.swift
 //  Covid19Layout
-//
-//  Created by User on 6/5/20.
-//  Copyright © 2020 hung. All rights reserved.
-//
+
 
 import UIKit
 
@@ -83,7 +80,7 @@ class LoginViewController: UIViewController {
         
         
         
-        button.addTarget(self, action: #selector(onLogin), for: .touchUpInside)
+        button.addTarget(LoginViewController.self, action: #selector(onLogin), for: .touchUpInside)
         
        
         
@@ -101,7 +98,7 @@ class LoginViewController: UIViewController {
         let register = UIButton()
         register.translatesAutoresizingMaskIntoConstraints = false
         
-        register.addTarget(self, action: #selector(onRegister), for: .touchUpInside)
+        register.addTarget(LoginViewController.self, action: #selector(onRegister), for: .touchUpInside)
         
         
 

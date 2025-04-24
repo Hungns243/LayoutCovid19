@@ -1,10 +1,7 @@
 //
 //  RegisterViewController.swift
 //  Covid19Layout
-//
-//  Created by User on 6/8/20.
-//  Copyright © 2020 hung. All rights reserved.
-//
+
 
 import UIKit
 
@@ -96,7 +93,7 @@ class RegisterViewController: UIViewController {
         button.layer.cornerRadius = 8
         button.layer.masksToBounds = true
         
-        button.addTarget(self, action: #selector(pop), for: .touchUpInside)
+        button.addTarget(RegisterViewController.self, action: #selector(pop), for: .touchUpInside)
         
         
         return button
@@ -149,7 +146,7 @@ class RegisterViewController: UIViewController {
         attributed.addAttribute(.font, value: font, range: NSRange(location: 0, length: attributed.length))
         
         buttonLG.setAttributedTitle(attributed, for: .normal)
-        buttonLG.addTarget(self, action: #selector(onDismiss), for: .touchUpInside)
+        buttonLG.addTarget(RegisterViewController.self, action: #selector(onDismiss), for: .touchUpInside)
         
         
         return buttonLG

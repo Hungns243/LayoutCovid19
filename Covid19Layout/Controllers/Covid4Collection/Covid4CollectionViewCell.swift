@@ -1,10 +1,7 @@
 //
 //  Covid4CollectionViewCell.swift
 //  Covid19Layout
-//
-//  Created by User on 6/17/20.
-//  Copyright © 2020 hung. All rights reserved.
-//
+
 
 import UIKit
 
